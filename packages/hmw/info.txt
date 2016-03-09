@@ -51,11 +51,19 @@
 	{
 	"ID" "ITEM_LOGIC_GATE"
 	"all_conf"  "logic_gate.cfg"
+	"Description"	
+		{
+		"Line"		"Combine signals with AND, OR and XOR. Unlike the BEE logic, these are visible ingame."
+		"Bullet"	"Inverted versions are available by setting the 'start enabled' flag."
+		"Bullet"	"Pro tip: the AND gate by itself is useful for reducing antline clutter."
+		}
 	"Version"
 		{
 		"Styles"
 			{
-			"BEE2_CLEAN"	"logic_clean"
+			"BEE2_CLEAN"        "logic_clean"
+			"BEE2_1950s"        "logic_50s"
+			"BEE2_1970s"        "logic_70s"
 			}
 		}
 	}

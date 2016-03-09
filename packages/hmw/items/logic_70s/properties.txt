@@ -1,13 +1,13 @@
 "Properties"
 	{
-	"Authors"   "HMW"
+	"Authors"   "HMW, TeamSpen210"
 	"Tags"      "Logic"
 	"all_icon"  "palette/hmw/logic_gate_all.png"
 	"all_name"  "LOGIC_GATES"
-	"ent_count" "5"
+	"ent_count"	"5"
 	"Icon"
 		{
-			"all"	"logic/hmw/logic_gate_all.png"
+			"all"   "logic/hmw/logic_gate_all.png"
 			"0"     "logic/hmw/logic_gate_and.png"
 			"1"     "logic/hmw/logic_gate_or.png"
 			"2"     "logic/hmw/logic_gate_xor.png"
