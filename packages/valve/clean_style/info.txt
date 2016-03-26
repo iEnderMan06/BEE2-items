@@ -200,6 +200,7 @@
 		"Line"  "Randomly chooses between Robot Waiting Room 1-5 and '7'."
 		}
 	"Soundscript"   "music.pti_b1_001"
+	// No sample - this switches between the following 7 ones.
 	}
 
 "Music"
@@ -216,6 +217,7 @@
 		"Line"  "This track is similar to the 1950s music tracks."
 		}
 	"Soundscript"   "music.ctc_b1_001"
+	"Sample"        "p2/ctc_b1_001.ogg"
 	}
 
 "Music"
@@ -231,6 +233,7 @@
 		"Line"  "One of several tracks played in the Cooperative Testing Hub, and PeTI levels."
 		}
 	"Soundscript"   "music.ctc_b1_002"
+	"Sample"        "p2/ctc_b1_002.ogg"
 	}
 
 "Music"
@@ -246,6 +249,7 @@
 		"Line"  "One of several tracks played in the Cooperative Testing Hub, and PeTI levels."
 		}
 	"Soundscript"   "music.ctc_b1_003"
+	"Sample"        "p2/ctc_b1_003.ogg"
 	}
 
 "Music"
@@ -262,6 +266,7 @@
 		"Line"	"This track is similar to the 1950s music tracks."
 		}
 	"Soundscript"   "music.ctc_b1_004"
+	"Sample"        "p2/ctc_b1_004.ogg"
 	}
 
 "Music"
@@ -278,6 +283,7 @@
 		"Line"  "This track is similar to the 1950s music tracks."
 		}
 	"Soundscript"   "music.ctc_b1_005"
+	"Sample"        "p2/ctc_b1_005.ogg"
 	}
 
 "Music"
@@ -295,6 +301,7 @@
 		}
 	// The soundscript for this doesn't use the actual sound, so we need to use the raw WAV.
 	"Soundscript"   "*)music/mp_coop_lobby_2_c6.wav"
+	"Sample"        "p2/mp_coop_lobby_2_c6.ogg"
 	}
 
 "Music"
@@ -312,4 +319,5 @@
 		"Line"  "It features horns and xylophone-like instruments."
 		}
 	"Soundscript"   "music.ctc_b1_006"
+	"Sample"        "p2/ctc_b1_006.ogg"
 	}
