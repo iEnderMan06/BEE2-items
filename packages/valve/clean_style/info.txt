@@ -186,6 +186,12 @@
 	
 "PackList"
 	{
+	"ID"        "PACK_PLAYER_CLIP_ELECTRIC"
+	"AddIfMat"  "BEE2/fizz/player_clip_electric"
+	}
+	
+"PackList"
+	{
 	"ID"       "PACK_SQUAREBEAMS_SHINY"
 	"AddIfMat" "BEE2/squarebeams_shiny"
 	"Config" 
