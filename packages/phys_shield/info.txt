@@ -1,15 +1,15 @@
 "ID"		"PHYS_SHIELD"
-"Name"		"Physics Shield"
-"Desc"      "The Physics Shield blocks all physics items like cubes."	
+"Name"		"Physlers"
+"Desc"      "The Physler blocks all physics items like cubes."	
 
 "Item"
 	{
 	"ID" "ITEM_PHYS_SHIELD"
 	"Description"
 		{
-		"" "A custom fizzler created by Felix Griffin.  "
-		"" "Physics Shields block physics items, like cubes, but not the player."
-           "" "Other names: Physler, Physics Repulsion Field."
+		"" "A custom fizzler created by Felix Griffin."
+		"" "Physlers block physics items, like cubes, but do not block the player or portal shots."
+		"" "Other names: _Physics Shield_, _Physics Repulsion Field_."
 		}
 	"Version"
 		{
@@ -22,16 +22,7 @@
 
 "PackList"
 	{
-	"ID" "PACK_FR_PLAYER_CLIP_ELECTRIC"
-	"Config"
-		{
-		"File" "materials/BEE2/fizz/fourthreaper/player_clip_electric.vmt"
-		}
-	}
-
-"PackList"
-	{
-	"ID" "PACK_FR_PHYS_SHIELD_CLEAN"
+	"ID" "PACK_FG_PHYS_SHIELD_CLEAN"
 	"Config"
 		{
 		"File" "materials/BEE2/fizz/phys_shield/physics_shield.vmt"
@@ -40,4 +31,15 @@
 		"File" "materials/BEE2/fizz/phys_shield/clean_pshield_right.vmt"
 		}
 	}
-	
+
+"PackList"
+	{
+	"ID" "PACK_FG_PHYS_SHIELD_RETRO"
+	"Config"
+		{
+		"File" "materials/BEE2/fizz/phys_shield/50s_pshield.vmt"
+		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_center.vmt"
+		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_left.vmt"
+		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_right.vmt"
+		}
+	}

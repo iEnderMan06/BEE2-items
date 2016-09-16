@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "36"
+	"mapversion" "39"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "1"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "36"
+	"mapversion" "39"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -231,7 +231,7 @@ entity
 	"pressuredelay" "0"
 	"RandomAnimation" "0"
 	"renderamt" "255"
-	"rendercolor" "128 128 0"
+	"rendercolor" "10 165 25"
 	"renderfx" "0"
 	"rendermode" "0"
 	"SetBodyGroup" "0"
