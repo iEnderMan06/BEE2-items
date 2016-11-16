@@ -1,0 +1,21 @@
+"ID"		"COOPER_PANEL"
+"Name"		"Test Chamber Parts"
+"Desc"      "Items which form the structure of test chambers - glass, panels, and pistons."
+	
+"Item"
+	{
+	"ID" "ITEM_VERT_PANEL"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"vert_pan_clean"
+			}
+		}
+	}
+
+"BrushTemplate"
+	{
+	"ID"    "BEE_VERT_PANEL_TOP_CLEAN"
+	"File"  "clean_top.vmf"
+	}
