@@ -1,0 +1,21 @@
+"ID"		"BEE2_EXTRA_PANELS"
+"Name"		"Panel Items"
+"Desc"      "Additional Panel variants."
+
+"Item"
+	{
+	"ID" "ITEM_BEE2_COVERED_ANGLED_PANEL"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"        "covered_pan_clean"
+			}
+		}
+	}
+
+"BrushTemplate"
+	{
+	"ID" "BEE2_COVERED_ANGLED_PANEL_TOP_CLEAN"
+	"File" "covered_pan_top_clean.vmf"
+	}
