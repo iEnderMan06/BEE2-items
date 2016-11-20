@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "123"
+	"mapversion" "129"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
+	"nGridSpacing" "1"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "123"
+	"mapversion" "129"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -540,6 +540,30 @@ world
 }
 entity
 {
+	"id" "1250"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "5"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.vmt"
+	"parentname" "arm,light"
+	"renderamt" "255"
+	"rendercolor" "$start_color"
+	"rendermode" "9"
+	"scale" "0.4"
+	"spawnflags" "1"
+	"targetname" "spr"
+	"origin" "3.75 1.35 -63.6"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
 	"id" "1227"
 	"classname" "logic_timer"
 	"RefireTime" "0.5"
@@ -551,6 +575,8 @@ entity
 	{
 		"OnTimerLow" "armSkin10-1"
 		"OnTimerHigh" "armSkin00-1"
+		"OnTimerLow" "sprColor255 128 00-1"
+		"OnTimerHigh" "sprColor0 255 2550-1"
 	}
 	"origin" "0 3.8147e-006 -48"
 	editor
@@ -561,100 +587,106 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
-entity
+hidden
 {
-	"id" "1229"
-	"classname" "trigger_push"
-	"alternateticksfix" "0"
-	"origin" "0 0 -60"
-	"pushdir" "-90 0 0"
-	"spawnflags" "4104"
-	"speed" "80"
-	"startdisabled" "0"
-	"targetname" "wake_trig"
-	solid
+	entity
 	{
-		"id" "1230"
-		side
+		"id" "1229"
+		"classname" "trigger_push"
+		"alternateticksfix" "0"
+		"origin" "0 0 -60"
+		"pushdir" "-90 0 0"
+		"spawnflags" "4104"
+		"speed" "80"
+		"startdisabled" "0"
+		"targetname" "wake_trig"
+		hidden
 		{
-			"id" "463"
-			"plane" "(-24 -8 -56) (-24 8 -56) (24 8 -56)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 1 0 -24] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "462"
-			"plane" "(-24 8 -64) (-24 -8 -64) (24 -8 -64)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 1 0 -24] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "461"
-			"plane" "(24 8 -64) (24 -8 -64) (24 -8 -56)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 24] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "460"
-			"plane" "(-24 -8 -64) (-24 8 -64) (-24 8 -56)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 24] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "459"
-			"plane" "(24 -8 -64) (-24 -8 -64) (-24 -8 -56)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "458"
-			"plane" "(-24 8 -64) (24 8 -64) (24 8 -56)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
+			solid
+			{
+				"id" "1230"
+				side
+				{
+					"id" "463"
+					"plane" "(-24 -8 -56) (-24 8 -56) (24 8 -56)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 32] 0.25"
+					"vaxis" "[0 1 0 -24] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "462"
+					"plane" "(-24 8 -64) (-24 -8 -64) (24 -8 -64)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 32] 0.25"
+					"vaxis" "[0 1 0 -24] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "461"
+					"plane" "(24 8 -64) (24 -8 -64) (24 -8 -56)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 -1 0 24] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "460"
+					"plane" "(-24 -8 -64) (-24 8 -64) (-24 8 -56)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 -1 0 24] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "459"
+					"plane" "(24 -8 -64) (-24 -8 -64) (-24 -8 -56)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 32] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "458"
+					"plane" "(-24 8 -64) (24 8 -64) (24 8 -56)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 32] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				editor
+				{
+					"color" "220 30 220"
+					"visgroupshown" "1"
+					"visgroupautoshown" "1"
+				}
+			}
 		}
 		editor
 		{
 			"color" "220 30 220"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
+			"comments" "When enabled, wake props so they can be thrown."
+			"logicalpos" "[0 61513]"
 		}
-	}
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "When enabled, wake props so they can be thrown."
-		"logicalpos" "[0 61513]"
 	}
 }
 entity
@@ -731,6 +763,8 @@ entity
 		"OnFalse" "flash_timEnable0-1"
 		"OnTrue" "flash_timResetTimer0-1"
 		"OnFalse" "armSkin10-1"
+		"OnFalse" "sprColor255 128 00-1"
+		"OnTrue" "sprColor0 255 2550-1"
 	}
 	"origin" "-16 -16 -48"
 	editor
@@ -867,4 +901,8 @@ cameras
 cordons
 {
 	"active" "0"
+}
+quickhide
+{
+	"count" "4"
 }

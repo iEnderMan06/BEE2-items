@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "130"
+	"mapversion" "135"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,19 +14,91 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
-	"bShow3DGrid" "0"
+	"nGridSpacing" "4"
+	"bShow3DGrid" "1"
 }
 world
 {
 	"id" "1"
-	"mapversion" "130"
+	"mapversion" "135"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxblobcount" "250"
 	"maxpropscreenwidth" "-1"
 	"skyname" "sky_day01_01"
+}
+entity
+{
+	"id" "1294"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "5"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.vmt"
+	"parentname" "arm,light_r"
+	"renderamt" "255"
+	"rendercolor" "$start_color"
+	"rendermode" "9"
+	"scale" "0.4"
+	"spawnflags" "1"
+	"targetname" "spr"
+	"origin" "-4 38 -65"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1298"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "5"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.vmt"
+	"parentname" "arm,light_l"
+	"renderamt" "255"
+	"rendercolor" "$start_color"
+	"rendermode" "9"
+	"scale" "0.4"
+	"spawnflags" "1"
+	"targetname" "spr"
+	"origin" "-4 -38 -65"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1302"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "5"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.vmt"
+	"parentname" "arm,light_c"
+	"renderamt" "255"
+	"rendercolor" "$start_color"
+	"rendermode" "9"
+	"scale" "0.4"
+	"spawnflags" "1"
+	"targetname" "spr"
+	"origin" "4 0 -65"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
 }
 entity
 {
@@ -41,6 +113,8 @@ entity
 	{
 		"OnTimerLow" "armSkin10-1"
 		"OnTimerHigh" "armSkin00-1"
+		"OnTimerLow" "sprColor255 128 00-1"
+		"OnTimerHigh" "sprColor0 255 2550-1"
 	}
 	"origin" "16 16 -48"
 	editor
@@ -219,6 +293,8 @@ entity
 		"OnFalse" "flash_timEnable0-1"
 		"OnTrue" "flash_timResetTimer0-1"
 		"OnFalse" "armSkin10-1"
+		"OnFalse" "sprColor255 128 00-1"
+		"OnTrue" "sprColor0 255 2550-1"
 	}
 	"origin" "16 -16 -48"
 	editor
