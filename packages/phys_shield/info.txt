@@ -22,6 +22,19 @@
 
 "PackList"
 	{
+	"ID" "PACK_FG_PHYS_SHIELD_COMMON"
+	"Config"
+		{
+		"File" "materials/BEE2/fizz/phys_shield/physler_flow.vtf"
+		"File" "materials/BEE2/fizz/phys_shield/physler_noise.vtf"
+		"File" "materials/BEE2/fizz/phys_shield/physler_ripples_dim.vtf"
+		
+		"File" "scripts/vscripts/BEE2/trig_touch_fx.nut"
+		}
+	}
+
+"PackList"
+	{
 	"ID" "PACK_FG_PHYS_SHIELD_CLEAN"
 	"Config"
 		{
@@ -29,8 +42,6 @@
 		"File" "materials/BEE2/fizz/phys_shield/clean_pshield_center.vmt"
 		"File" "materials/BEE2/fizz/phys_shield/clean_pshield_left.vmt"
 		"File" "materials/BEE2/fizz/phys_shield/clean_pshield_right.vmt"
-		
-		"File" "scripts/vscripts/BEE2/trig_touch_fx.nut"
 		}
 	}
 
@@ -43,7 +54,5 @@
 		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_center.vmt"
 		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_left.vmt"
 		"File" "materials/BEE2/fizz/phys_shield/50s_pshield_right.vmt"
-		
-		"File" "scripts/vscripts/BEE2/trig_touch_fx.nut"
 		}
 	}
