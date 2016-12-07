@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "55"
+	"mapversion" "68"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "55"
+	"mapversion" "68"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -80,62 +80,16 @@ entity
 }
 entity
 {
-	"id" "647"
-	"classname" "logic_timer"
-	"RefireTime" "0.022"
-	"spawnflags" "0"
-	"StartDisabled" "1"
-	"targetname" "fade_timer_in"
-	"UseRandomTime" "0"
-	connections
-	{
-		"OnTimer" "fade_counterAdd50-1"
-	}
-	"origin" "0 16 -24"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "649"
-	"classname" "logic_timer"
-	"RefireTime" "0.022"
-	"spawnflags" "0"
-	"StartDisabled" "1"
-	"targetname" "fade_timer_out"
-	"UseRandomTime" "0"
-	connections
-	{
-		"OnTimer" "fade_counterSubtract50-1"
-	}
-	"origin" "0 -16 -24"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
 	"id" "651"
 	"classname" "logic_relay"
 	"targetname" "disable_rl"
 	connections
 	{
-		"OnTrigger" "fade_timer_outEnable0-1"
-		"OnTrigger" "fade_timer_inDisable0-1"
 		"OnTrigger" "sfxFadeOut20-1"
 		"OnTrigger" "clip*Disable0-1"
-		"OnTrigger" "model*TurnOff1.25-1"
-		"OnTrigger" "model*TurnOn0-1"
-		"OnTrigger" "fx*Disable0.75-1"
+		"OnTrigger" "fx_trigDisable0.75-1"
+		"OnTrigger" "fxDisable0.75-1"
+		"OnTrigger" "mat_modStartFloatLerp1.7 0 0.75 00-1"
 	}
 	"origin" "0 -16 -8"
 	editor
@@ -153,40 +107,13 @@ entity
 	"targetname" "enable_rl"
 	connections
 	{
-		"OnTrigger" "model*TurnOff1.25-1"
-		"OnTrigger" "fade_timer_inEnable0-1"
-		"OnTrigger" "fade_timer_outDisable0-1"
 		"OnTrigger" "sfxPlaySound0-1"
 		"OnTrigger" "clip_*Enable0-1"
-		"OnTrigger" "model*TurnOn0-1"
-		"OnTrigger" "fx*Enable0.75-1"
+		"OnTrigger" "fxEnable0-1"
+		"OnTrigger" "fx_trigEnable0.75-1"
+		"OnTrigger" "mat_modStartFloatLerp0 1.7 0.75 00-1"
 	}
 	"origin" "0 16 -8"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "733"
-	"classname" "math_counter"
-	"max" "150"
-	"min" "0"
-	"StartDisabled" "0"
-	"startvalue" "150"
-	"targetname" "fade_counter"
-	connections
-	{
-		"OutValue" "model*ColorGreenValue0-1"
-		"OnHitMax" "fade_timer_*Disable0-1"
-		"OnHitMin" "fade_timer_*Disable0-1"
-		"OutValue" "fx*Alpha0-1"
-	}
-	"origin" "0 0 -24"
 	editor
 	{
 		"color" "220 30 220"
