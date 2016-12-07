@@ -17,18 +17,12 @@ $surfaceprop glass
 $translucent 1
 $additive 1
 $FLOW_VORTEX_SIZE 10
-"360?$outputintensity" 2.8
-"SonyPS3?$outputintensity" .7
+$outputintensity 2.3
 
-"srgb_pc?$outputintensity" 2.3
-"!srgb_pc?$outputintensity" 1.7
 Proxies
-{
-FizzlerVortex
-{
-}
-MaterialModifyAnimated
-{
-}
-}
+	{
+	MaterialModify
+		{
+		}
+	}
 }

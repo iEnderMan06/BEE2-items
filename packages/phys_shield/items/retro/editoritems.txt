@@ -68,12 +68,12 @@
 				{
 				"0"
 					{
-					"Name" "instances/BEE2/50s/items/phys_shield/pshield_base.vmf"
+					"Name" "instances/BEE2/50s/items/physler/base.vmf"
 					"EntityCount" "5"
 					}
 				"1"
 					{
-					"Name" "instances/BEE2/50s/items/phys_shield/pshield_model.vmf"
+					"Name" "instances/BEE2/50s/items/physler/model.vmf"
 					"EntityCount" "5"
 					}
 				}

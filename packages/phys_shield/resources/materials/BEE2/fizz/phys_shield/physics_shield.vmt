@@ -21,9 +21,6 @@ $outputintensity 1.7
 
 Proxies
 	{
-	FizzlerVortex
-		{
-		}
 	MaterialModify
 		{
 		}
