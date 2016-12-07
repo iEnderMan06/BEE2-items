@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "74"
+	"mapversion" "75"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "74"
+	"mapversion" "75"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -155,8 +155,6 @@ entity
 	{
 		"OnTrue" "clipEnable0-1"
 		"OnFalse" "clipDisable0-1"
-		"OnTrue" "mdlSetAnimationopen0-1"
-		"OnFalse" "mdlSetAnimationclose0-1"
 		"OnTrue" "enable_rlTrigger0-1"
 		"OnTrue" "disable_rlCancelPending0-1"
 		"OnFalse" "enable_rlCancelPending0-1"
