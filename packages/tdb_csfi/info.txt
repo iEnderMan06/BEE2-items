@@ -14,7 +14,8 @@
 		"Styles" 
 			{
 			"BEE2_CLEAN"        "clean"
-                "BEE2_1950s"        "retro"
+            "BEE2_1950s"        "retro"
+			"BEE2_OVERGROWN"	"over"
 			}
 		}
 }
