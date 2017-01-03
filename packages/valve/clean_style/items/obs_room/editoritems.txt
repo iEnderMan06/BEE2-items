@@ -8,24 +8,25 @@
 			"Name"			"Large Observation Room"
 			"Model"
 				{
-				"ModelName"		"observationroom.3ds"
+				"ModelName"		"observationroom.mdl"
 				}
 			"Palette"
 				{
 				"Tooltip"	"LARGE OBSERVATION ROOM"
 				"Image"		"palette/observation_room.png"
-				"Position"	"3 5 0"
 				}
 			}
-		"MovementHandle"		"HANDLE_NONE"
-		"InvalidSurface"		"CEILING FLOOR"
-		"Deletable"		"0"
-		"Copyable"		"0"
+		"MovementHandle"    "HANDLE_4_DIRECTIONS"
+		"InvalidSurface"    "CEILING FLOOR"
+		"Deletable"         "0"
+		"Copyable"          "0"
 		}
 	"Exporting"
 		{
 		"Instances"
 			{
+			"bee2_obs_horiz" "instances/BEE2/clean/items/observation_room_256_horiz.vmf"
+			"bee2_obs_vert"  "instances/BEE2/clean/items/observation_room_256_vert.vmf"
 			"0"
 				{
 				"Name"				"instances/BEE2/clean/items/observation_room_256.vmf"
