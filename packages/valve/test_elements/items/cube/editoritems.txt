@@ -256,11 +256,23 @@
 				"EntityCount"	"2"
 			}
 			
-			"bee2_dropper_standard" "instances/BEE2/clean/items/cube/drp_standard.vmf"
-			"bee2_dropper_companion" "instances/BEE2/clean/items/cube/drp_companion.vmf"
-			"bee2_dropper_reflect" "instances/BEE2/clean/items/cube/drp_reflection.vmf"
-			"bee2_dropper_sphere" "instances/BEE2/clean/items/cube/drp_sphere.vmf"
-			"bee2_dropper_franken" "instances/BEE2/clean/items/cube/drp_monster.vmf"
+			// These instances are automatically added, offset for the longer shaft.
+			"bee2_shaft_standard"  "instances/BEE2/clean/items/cube/drp_standard.vmf"
+			"bee2_shaft_companion" "instances/BEE2/clean/items/cube/drp_companion.vmf"
+			"bee2_shaft_reflect"   "instances/BEE2/clean/items/cube/drp_reflection.vmf"
+			"bee2_shaft_sphere"    "instances/BEE2/clean/items/cube/drp_sphere.vmf"
+			"bee2_shaft_franken"   "instances/BEE2/clean/items/cube/drp_monster.vmf"
+			
+			// These are not offset.
+			"bee2_dropper_standard"  ""
+			"bee2_dropper_companion" ""
+			"bee2_dropper_reflect"   ""
+			"bee2_dropper_sphere"    ""
+			"bee2_dropper_franken"   ""
+			
+			// Overlays used for the different sizes.
+			"bee2_short_shaft" "instances/BEE2/clean/items/cube/dropper_shaft_short.vmf"
+			"bee2_long_shaft"  "instances/BEE2/clean/items/cube/dropper_shaft_long.vmf"
 		}
 
 		"TargetName"		"cu"
