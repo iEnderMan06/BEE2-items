@@ -1,0 +1,10 @@
+"Properties"
+	{
+	"Name"			"Double Redirection Cube"
+	"Authors"		"HugoBDesigner"
+	"Tags"			"BEE 2"
+	"Icon"
+		{
+			"0"		"clean/double_cube.png"
+		}
+	}

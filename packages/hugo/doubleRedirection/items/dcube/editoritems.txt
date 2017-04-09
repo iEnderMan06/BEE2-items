@@ -1,0 +1,96 @@
+"Item"
+	{
+		"ItemClass"		"ItemBase"
+		"Type"			"ITEM_DOUBLE_LASER_CUBE"
+		"Editor"
+		{
+			"SubTypeProperty"		"ButtonType"
+			"SubType"
+			{
+				"Name"		"Double Laser Redirection Cube"
+				"Model"
+				{
+					"ModelName"		"cubelaser.3ds"
+				}
+				"Palette"
+				{
+					"Tooltip"		"DOUBLE REDIRECTION CUBE"
+					"Image"			"palette/double_cube.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+			}
+			"MovementHandle"		"HANDLE_36_DIRECTIONS"
+			"InvalidSurface"		"WALL CEILING"
+			"CanAnchorOnBarriers"		"1"
+			"CanAnchorOnGoo"			"1"
+		}
+		"Properties"
+		{
+			
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/clean/items/dcube/doubleredirectioncube.vmf"
+					"EntityCount"		"10"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			"TargetName"		"dc"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"				"0 0 0"
+					"CollideType"		"COLLIDE_PHYSICS"
+					"CollideAgainst"	"COLLIDE_PHYSICS"
+
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}

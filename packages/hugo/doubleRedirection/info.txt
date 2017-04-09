@@ -1,0 +1,21 @@
+"ID"		"HUGO_LASERCUBE"
+"Name"		"Double Redirection Cube"
+"Desc"      "Adds the Double Laser Redirection Cube."
+
+"Prerequisites"
+	{
+	"Package"	"BEE2_CLEAN_STYLE"
+	}
+"Item"
+	{
+	"ID" "ITEM_DOUBLE_LASER_CUBE"
+	"Description"	"A laser redirection cube that shoots lasers from two sides. It can also self-feed and bootstrap with other cubes."
+	"all_conf"	"double_laser_cube"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"		"dcube"
+			}
+		}
+	}
