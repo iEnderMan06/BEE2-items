@@ -131,8 +131,27 @@
 	"ID"    "LAUTARO_PROTRUDING_PED_BASE_P1"
 	"File"  "protruding_base_p1.vmf"
 	}
+
 "BrushTemplate"
 	{
-	"ID"    "LAUTARO_PROTRUDING_PED_BASE_BTS"  // This is a pseudo version.... We still need to styling the Button!
-	"File"  "protruding_base_bts.vmf"
+	"ID"    "LAUTARO_PROTRUDING_PED_BASE_BTS_WHITE" // I had to make separated templates because it required special justified on textures from black colour type.
+	"File"  "protruding_base_bts_white.vmf"
 	}	
+	
+"BrushTemplate"
+	{
+	"ID"    "LAUTARO_PROTRUDING_PED_BASE_BTS_BLACK" // I had to make separated templates because it required special justified on textures from black colour type. 
+	"File"  "protruding_base_bts_black.vmf"
+	}
+
+"BrushTemplate"
+	{
+	"ID"    "LAUTARO_PROTRUDING_PED_BASE_BTS_WHITE_REV" // My intention here was using the "start reversed" from the config file to replace a template brush for one that is pre-rotated to make the "Override Model Signage" to shows in the correct position....
+	"File"  "protruding_base_bts_white_rev.vmf"
+	}		
+
+"BrushTemplate"
+	{
+	"ID"    "LAUTARO_PROTRUDING_PED_BASE_BTS_BLACK_REV" // My intention here was using the "start reversed" from the config file to replace a template brush for one that is pre-rotated to make the "Override Model Signage" to shows in the correct position....
+	"File"  "protruding_base_bts_black_rev.vmf"
+	}			
